@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Sistem Informasi Data Pegawai</title>
+        <link rel="stylesheet" type="text/css" href="1915051037_Tugas3.css">
+    </head>
+    <body>
+        <div class="container">
+        <header class="header">
+        <div class="logo">
+            <img src="https://i.ibb.co/9VCx8Gz/undiksha.png" alt="undiksha" border="0" weidth="150px" align="left"></a>
+    </div>
+    <nav class="nav">
+        <b><h1>Selamat Datang<p>Di Sistem Data Pegawai</p></h1></b>
+        <ul>
+            <li><a href="#logout">Logout</a></li>
+        </ul>
+    </nav>
+    </header>
+<div class="wrapper">
+<asside class="sidebar">
+    <div style="padding: 10px;">
+        <font size="5"><b>Menu</b></font><br>
+        <hr>
+        <a href="https://pegawai.undiksha.ac.id/">Home</a><br  />
+        <a href="https://pegawai.undiksha.ac.id/data/daftar_pegawai">Biodata</a><br  />
+        <a href="#">Update Biodata</a><br  />
+        <a href="#">Contact</a><br  />
+    </div>
+</asside>
+
+<main class="content">
+    <div style="padding: 10px;">
+    <h2 style="margin: 0px;">Update Biodata Karyawan</h2>
+    <hr/>
+    <form action="formulir.php" method="post" onSubmit="return ValidasiForm()" name="FormReg">
+        <table>
+            <tr>
+                <td>Nama</td>
+                <td></td>
+                <td><input type="text" name="nama" value=""placeholder="Masukkan Nama"  /><br/>
+                    <small style="color: red" id="err_nama"></small>
+                </td>
+        </tr>
+        </tr>
+            <td>Password</td>
+            <td>:</td>
+            <td> <input type="password" name"password" placeholder="Masukkan Password"/><br/>
+                <small style="color: red" id="err_password"></small>
+            </td>
+        </tr>
+        </tr>
+            <td>Jenis Kelamin</td>
+            <td>:</td>
+            <!--Gunakan atribut checked untuk memilih radio-->
+            <td><input type="radio" name="jenis_kelamin" value="laki-laki" checked />Laki-Laki
+                <input type="radio" name="jenis_kelamin" value="perempuan"  />perempuan</td>
+
+                <br/>
+                <small style="color: red" id="err_jenis_kelamin"></small>
+            </td>
+        </tr>
+        <tr>
+            <td>Hobi</td>
+            <td>:</td>
+            <td><input type="checkbox" name="hobi" value="Membaca"  /> Membaca Buku
+                <!-- Gunakan atribut checked untuk memilih checkbox-->
+                <input type="checkbox" name="hobi" value="Menulis"/> Menulis
+                <input type="checkbox" name="hobi" value="Memancing"/> Memancing
+                <input type="checkbox" name="lainnya" />
+                <td><input type="text" name="Hobi Lainnya" value="" placeholder="Lainnya" /></td>
+                <br/>
+                <small style="color: red" id="err_hobi"></small>
+            </td>
+         </tr>
+         </tr>
+         <td>Asal Kota</td>
+         <td>:</td>
+         <td> <select name="asal_kota">
+<option value="kota Denpasar"> Badung</option>
+<option>Denpasar</option>
+<option value "kota Jakarta" selected>Jakarta</option>
+<option value "kota Medan" selected>Medan</option>
+        </select><br/>
+            <small style="color: red" id="err_asal_kota"></small>
+        </td>
+    </tr>
+    <tr>
+        <td>Komentar</td>
+        <td>:</td>
+        <td><textarea name="komentar" rows="5" cols="20"></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3" align="right"><button> simpan</button> </td>
+        </tr>
+        </table>
+    </form>
+    </div>
+    </main>
+</div>
+<footer class="footer"><center>
+    &copy; 2020 NPS
+</center></footer>
